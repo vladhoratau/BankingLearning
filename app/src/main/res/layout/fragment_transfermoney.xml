@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sourceAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_120"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:text="Choose source account"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sourceAccountTextView"
+        android:layout_marginLeft="@dimen/dimen_16" />
+
+
+    <EditText
+        android:id="@+id/amountToSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:hint="Amount to send" />
+
+    <EditText
+        android:id="@+id/recipientAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountToSend"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:hint="Recipient Account" />
+
+    <EditText
+        android:id="@+id/recipientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipientAccount"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:hint="Recipient Name" />
+
+
+    <Button
+        android:id="@+id/sendMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipientName"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:text="Send" />
+
+</RelativeLayout>

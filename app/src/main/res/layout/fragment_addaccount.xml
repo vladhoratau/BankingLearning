@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/addAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_120"
+        android:text="Add account" />
+
+    <EditText
+        android:id="@+id/newAccountNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addAccountTextView"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:hint="Account Name" />
+
+    <TextView
+        android:id="@+id/selectTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newAccountNameEditText"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:text="Select account type" />
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectTypeTextView"
+        android:layout_marginLeft="@dimen/dimen_16" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ListView"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:text="Submit"
+        android:background="@color/color2"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

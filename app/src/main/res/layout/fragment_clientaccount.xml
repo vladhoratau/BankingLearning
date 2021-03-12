@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/generalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_210"
+        android:background="@drawable/firstactivityheader"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/clientNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_64"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/clientBDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clientNameTextView"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/clientCNPTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clientBDateTextView"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:textColor="@android:color/white" />
+
+        <Spinner
+            android:id="@+id/accountChooserSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clientCNPTextView"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16" />
+
+        <TextView
+            android:id="@+id/accountTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountChooserSpinner"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/accountBalanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountTypeTextView"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/showContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:layout_weight="1.0"
+        android:background="@color/color2"
+        android:layout_below="@+id/generalInfo"
+        android:text="Transaction details"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generalInfo"
+        android:id="@+id/accountOperationsContainer">
+
+    <LinearLayout
+        android:id="@+id/textViewsCotainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generalInfo"
+        android:layout_marginTop="@dimen/dimen_96"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:paddingTop="5dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="1dp"
+        tools:ignore="NotSibling">
+
+
+        <TextView
+            android:id="@+id/addSectionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/generalInfo"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_weight="1.0"
+            android:text="Add money"
+            android:textSize="@dimen/dimen_20" />
+
+
+        <TextView
+            android:id="@+id/withdrawSectionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/generalInfo"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_toRightOf="@id/addSectionTextView"
+            android:layout_weight="1.0"
+            android:text="Withdraw money"
+            android:textSize="@dimen/dimen_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewsCotainer"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingRight="4dp"
+        android:paddingBottom="1dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/generalInfo"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_weight="1.0"
+            android:background="@color/color2"
+            android:text="+"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/withdrawButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_weight="1.0"
+            android:background="@color/color2"
+            android:text="-"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <NumberPicker
+        android:id="@+id/operationsPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_16" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showContent"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:id="@+id/transactionHistoryContainer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transactionHistory">
+
+        </TextView>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+

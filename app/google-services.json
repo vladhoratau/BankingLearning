@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "442252065531",
+    "firebase_url": "https://bankinglearning.firebaseio.com",
+    "project_id": "bankinglearning",
+    "storage_bucket": "bankinglearning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442252065531:android:5256cdc337ce64a30d8e5e",
+        "android_client_info": {
+          "package_name": "com.example.bankinglearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442252065531-bjuqs7nrbsjf9m78a93lg5japc6k3quu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bankinglearning",
+            "certificate_hash": "4e5557863dfa3baa65c282d9f50465c8b56809c8"
+          }
+        },
+        {
+          "client_id": "442252065531-3jdq86navp0h9o04rk5jcus6p2c9aa38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCddKteY2TTdBZBL4Urr4LkVo1qm6uyAfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442252065531-3jdq86navp0h9o04rk5jcus6p2c9aa38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

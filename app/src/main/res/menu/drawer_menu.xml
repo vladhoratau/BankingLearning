@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:shownIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_transferMoney"
+            android:icon="@drawable/transfer_money"
+            android:title="Transfer money" />
+        <item
+            android:id="@+id/nav_addAccount"
+            android:icon="@drawable/add"
+            android:title="Add account" />
+
+        <item
+            android:id="@+id/nav_fingerprint"
+            android:icon="@drawable/ic_fingerprint"
+            android:title="Fingerprint Settings" />
+
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/exit"
+            android:title="LogOut" />
+
+    </group>
+
+</menu>

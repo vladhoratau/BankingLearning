@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">My Mobile Banking</string>
+    <string name="account_number">Account number : %s</string>
+    <string name="account_balance">Account balance: %s RON</string>
+    <string name="account_type">Account Type: %s</string>
+    <string name="selected_position">%i</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="biometrics_title">Login</string>
+    <string name="biometrics_description">Use your finger to log in</string>
+    <string name="biometrics_closeButton">Cancel</string>
+    <string name="emailValidation">emailValidation</string>
+    <string name="passwordValidation">passwordValidation</string>
+    <string name="emailPattern">emailPattern</string>
+    <string name="loginStatus">loginStatus</string>
+    <string name="emailConfirmed">emailConfirmed</string>
+    <string name="googleTask">googleTask</string>
+    <string name="nameValidation">nameValidation</string>
+    <string name="dateValidation">dateValidation</string>
+    <string name="datePattern">datePattern</string>
+    <string name="cnpValidation">cnpValidation</string>
+    <!--<string name="bDateFilled">bDateFilled</string>-->
+   <!-- <string name="isEmailValid">isEmailValid</string>-->
+    <string name="emailExists">emailExists</string>
+    <string name="isUserRegistered">isUserRegistered</string>
+    <string name="loadingVisibility">loadingVisibility</string>
+    <string name="ticketAccount">ticketAccount</string>
+    <string name="maxWithdrawLimit">maxWithdrawLimit</string>
+    <string name="minWithdrawLimit">minWithdrawLimit</string>
+    <string name="sameNameAcc">sameNameAcc</string>
+    <string name="selectedPosition">selectedPosition</string>
+    <string name="openFirstActivity">openFirstActivity</string>
+    <string name="firebaseSignOut">firebaseSignOut</string>
+    <string name="googleSignOut">googleSignOut</string>
+    <string name="logOutPREFS">logOutPREFS</string>
+    <string name="validRecipientAcc">validRecipientAcc</string>
+    <string name="sentMoney">sentMoney</string>
+    <string name="validSenderAcc">validSenderAcc</string>
+
+</resources>

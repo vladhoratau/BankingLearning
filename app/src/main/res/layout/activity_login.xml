@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_168"
+        android:background="@drawable/header"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/dimen_198"
+            android:layout_height="@dimen/dimen_198"
+            android:layout_gravity="center"
+            android:src="@drawable/bt" />
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:counterEnabled="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idLayout"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passLayout"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:background="@color/color2"
+        android:text="Login"
+        android:textColor="@android:color/white" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="12dp" />
+
+    <TextView
+        android:id="@+id/goToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/googleLogin"
+        android:layout_centerHorizontal="true"
+        android:text="Don't have an account? Register here" />
+
+
+    <ImageView
+        android:id="@+id/finger"
+        android:layout_width="@dimen/dimen_96"
+        android:layout_height="@dimen/dimen_96"
+        android:layout_below="@id/goToRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:layout_weight="1"
+        android:onClick="scanFinger"
+        android:src="@drawable/ic_fingerprint" />
+
+
+</RelativeLayout>
